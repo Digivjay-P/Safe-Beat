@@ -14,7 +14,7 @@ uint32_t tsLastReport = 0;  //unsigned int of 32 bit
 
 
 int age, athlete, i;  // Use integer for age
-float bpm;
+float bpm,bpmcheck;
 int rgbRpin=36, rgbGpin=34, rgbBpin=24, buzzerpin=22, interuptpin=28;  // Assign pin numbers
 int del1 = 100, del2 = 200, del3 = 600, del4 = 700;
 int warn = 0;
@@ -68,6 +68,8 @@ void onBeatDetected() {
 }
 float bpmreader() {
   pox.update();
+  float heartRate = pox.getHeartRate();
+  if(heartRate>0){
   if (millis() - tsLastReport > REPORTING_PERIOD_MS) {
     Serial.print("Heart Rate:");
     Serial.print(pox.getHeartRate());
@@ -75,8 +77,11 @@ float bpmreader() {
     Serial.print(pox.getSpO2());
     Serial.println("%");
     tsLastReport = millis();
+    return heartRate;
+  }}
+  else{
     return pox.getHeartRate();
-  }
+}
 }
 /*Making a structure to make the data easily understandable*/
 
@@ -195,7 +200,7 @@ void loop() {
   lcd.setCursor(0, 1);
   lcd.print("SpO2:");
   while (true) {
-    float bpmcheck = bpmreader();
+    bpmcheck = bpmreader();
     char button = k.getKey();
     if (button) {
       if (button == '*') {
@@ -219,7 +224,13 @@ void loop() {
     }
 
     if (athlete == 0) {
+      Serial.print("BPM proccessed:");
+      Serial.println(bpm);
+      Serial.print("BPM proccessed123:");
+      Serial.println(bpmcheck);
       warn = BPMoutofrange(age, bpm);
+      Serial.print("warn=");
+      Serial.println(warn);
     }
 
     if (warn == 0) {  // Green light when everything is fine
