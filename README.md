@@ -8,6 +8,7 @@ Safe beat is an arduino based health monitor. It functions to read and analyze t
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Features](#features)
+4. [Circuit Diagram](#circuit_diagram)
 
 
 ## [Installation](#Installation)
@@ -24,6 +25,11 @@ The desired usecase for the project was aimed to replicate the working of a heal
 ## [Features](#features)
 The hardware of this project is put in place to provide a bit askew user interface. The use of the keypad and LCD monitor form the basis of all imput and outputs in the circuit other than the serial monitor. An added utility in the project is that on detecting an anomalous health vital the system initiates a cooldown exercise protocol instructed to the user by means of the LCD display. 
 
+## [Circuit Diagram](#Circuit Diagram)
+
+MAX30100 Pin diagram![Image](https://github.com/user-attachments/assets/9ac03ca7-12f3-42e3-a896-2101c0075bac))
+
+Circuit diagram![Image](https://github.com/user-attachments/assets/90f078ef-4b34-41ea-8a08-7fdd8c86a5b8)
 
 ## Installation
 Steps to install and set up the project:
