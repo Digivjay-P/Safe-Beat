@@ -1,6 +1,6 @@
 ## SAFE BEATS
 
-![Electronics Club IITI](https://images.app.goo.gl/aoi6bZu5U2jneeXi6)
+Electronics Club IITI![Image](https://github.com/user-attachments/assets/234352d5-e301-4e26-965a-c0740555825b)
 
 ## Description
 Safe beat is an arduino based health monitor. It functions to read and analyze the health vitals of user namely the BPM and blood oxygen levels using the MAX30100 sensor. 
