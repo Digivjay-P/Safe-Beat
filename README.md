@@ -8,7 +8,7 @@ Safe beat is an arduino based health monitor. It functions to read and analyze t
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Features](#features)
-4. [Circuit Diagram](#circuit_diagram)
+4. [Circuit Diagram](#circuit-diagram)
 
 
 ## [Installation](#Installation)
@@ -25,11 +25,19 @@ The desired usecase for the project was aimed to replicate the working of a heal
 ## [Features](#features)
 The hardware of this project is put in place to provide a bit askew user interface. The use of the keypad and LCD monitor form the basis of all imput and outputs in the circuit other than the serial monitor. An added utility in the project is that on detecting an anomalous health vital the system initiates a cooldown exercise protocol instructed to the user by means of the LCD display. 
 
-## [Circuit Diagram](#Circuit Diagram)
+## Circuit Diagram
 
-MAX30100 Pin diagram![Image](https://github.com/user-attachments/assets/9ac03ca7-12f3-42e3-a896-2101c0075bac))
+### MAX30100 Pin Diagram
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/90f078ef-4b34-41ea-8a08-7fdd8c86a5b8" alt="MAX30100 Pin Diagram" width="400">
+  <p><em>Figure 1: MAX30100 Pin Diagram</em></p>
+</div>
 
-Circuit diagram![Image](https://github.com/user-attachments/assets/90f078ef-4b34-41ea-8a08-7fdd8c86a5b8)
+### Complete Circuit Diagram
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9ac03ca7-12f3-42e3-a896-2101c0075bac" alt="Complete Circuit Diagram" width="500">
+  <p><em>Figure 2: Complete Circuit Diagram</em></p>
+</div>
 
 ## Installation
 Steps to install and set up the project:
