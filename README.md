@@ -23,7 +23,7 @@ The desired usecase for the project was aimed to replicate the working of a heal
 
 
 ## [Features](#features)
-The hardware of this project is put in place to provide a bit askew user interface. The use of the keypad and LCD monitor form the basis of all imput and outputs in the circuit other than the serial monitor. An added utility in the project is that on detecting an anomalous health vital the system initiates a cooldown exercise protocol instructed to the user by means of the LCD display. 
+The hardware of this project is put in place to provide a bit askew user interface. The use of the keypad and LCD monitor form the basis of all input and outputs in the circuit other than the serial monitor. An added utility in the project is that on detecting an anomalous health vital the system initiates a cooldown exercise protocol instructed to the user by means of the LCD display. 
 
 ## Circuit Diagram
 
@@ -45,3 +45,4 @@ Steps to install and set up the project:
 git clone https://github.com/Digivjay-P/Safe-Beat
 cd Safe-Beat
 # Install required libraries on the Arduino IDE as mentioned above.
+
